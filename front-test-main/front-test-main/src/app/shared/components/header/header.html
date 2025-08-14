@@ -1,0 +1,14 @@
+<header class="toolbar">
+  <div class="toolbar-left">
+    <span class="logo">Seguridad App</span>
+  </div>
+
+  <div class="toolbar-right">
+    <button class="user-btn">
+      {{ data?.nombre ? (data.nombre + ' ' + data.apellidos) : 'Invitado' }}
+    </button>
+    <button class="logout-btn" (click)="onLogout()" title="Cerrar sesión">
+      <span class="logout-icon">⇦</span>
+    </button>
+  </div>
+</header>
